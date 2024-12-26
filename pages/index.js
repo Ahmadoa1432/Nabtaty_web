@@ -2,21 +2,44 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif',textAlign: "center" }}>
-      <h1>Welcome to My Next.js App!</h1>
-      <p>
-        This is the Home page. From here, you can navigate to other pages.
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: '100vh',
+        fontFamily: 'Arial, sans-serif',
+        background: 'linear-gradient(135deg, #6fbf73, #28a745)',
+        color: 'white',
+        textAlign: 'center',
+        padding: '20px',
+      }}
+    >
+      <h1 style={{ fontSize: '3rem', marginBottom: '20px' }}>Welcome to our CPIT-405 Project</h1>
+      <p style={{ fontSize: '1.5rem', marginBottom: '30px' }}>
+        Please click the button to enter the HomePage.
       </p>
-      <p>
-        <Link href="/about" style={{ color: 'blue', textDecoration: 'underline' }}>
-          Go to the About Page
+
+      <div style={{ textAlign: 'center' }}>
+        <Link
+          href="/HomePage"
+          style={{
+            display: 'inline-block',
+            padding: '15px 30px',
+            margin: '10px',
+            fontSize: '1.2rem',
+            color: '#fff',
+            backgroundColor: '#6c757d',
+            textDecoration: 'none',
+            borderRadius: '10px',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+            transition: 'all 0.3s ease',
+          }}
+        >
+          Go to the HomePage
         </Link>
-      </p>
-      <br></br>
-      <p><Link href="/weatherFinder" style={{ color: 'blue', textDecoration: 'underline' }}>
-          Go to the Weather Finder Page
-        </Link>
-        </p>
+      </div>
     </div>
   );
 }
