@@ -36,7 +36,6 @@ const HomePage = () => {
         </Link>
       </section>
 
-      {/* this is the About Section Ahmad :) */}
       <section style={{ padding: '60px 20px', backgroundColor: '#f4f4f4' }}>
         <div
           style={{
@@ -89,7 +88,6 @@ const HomePage = () => {
         </Link>
       </section>
 
-      {/* Features Section :D */}
       <section style={{ background: '#fff', padding: '60px 20px' }}>
         <h2 style={{ fontSize: '2.5rem', color: '#333' }}>Key Features</h2>
         <ul
